@@ -19,7 +19,6 @@ public class BubbleSort {
                 if (arr[j] > arr[j + 1]) {
                     swap(arr, j, j + 1);
                     flag = true;
-
                 }
             }
             if (!flag) break;
