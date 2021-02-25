@@ -17,17 +17,13 @@ public class InsertionSort {
             return arr;
         for(int i=1;i<arr.length;i++){
             int j=i,tmp=arr[i];
-            for(j=i;j>0&&arr[j-1]>tmp;j--)
+            while (j>0&&arr[j-1]>tmp){
                 arr[j]=arr[j-1];
+                j--;
+            }
             arr[j]=tmp;
         }
         return arr;
-    }
-
-    private static void swap(int[] arr, int i, int j) {
-        int temp = arr[i];
-        arr[i] = arr[j];
-        arr[j] = temp;
     }
 
 }
